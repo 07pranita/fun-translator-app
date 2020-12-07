@@ -69,26 +69,46 @@ body{
     background-color: var(--secondary-color);
 }
 
-main{
-    margin: auto;
-    padding: 1rem;
-    max-width: 600px;
-}
-#txt-input{
-    display: block;
-    padding: 1rem;
-    margin-top: 2rem;
-    height: 15vh;
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
+    justify-content: center;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    justify-content: center;
+}
+
+.img{
+    padding: 1rem;
+    text-align: center;
+    justify-content: center;
+}
+
+
+#txt-input{
+    padding: 1rem;
+    /* margin-top: 2rem; */
+    height: 120px;
+    width: 70%;
+    resize: none;
     font-family: inherit;
     font-size: large;
+    border: 1.5px solid  #10B981;
+    border-radius: 0.5rem;
 }
 
 .btn-translate{
-    padding: 1rem;
+    padding: 0.5rem;
     margin: 1rem;
     background-color: var(--primary-color);
-    border: none;
+    border-radius: 0.5rem;
     font-family: inherit;
     font-size: large;
 }
@@ -99,9 +119,12 @@ main{
 }
 
 .output{
+    font: inherit;
     box-sizing: border-box;
-    border: 1px solid black;
-    height: 16vh;
-    width: 100%;
-    margin: 1rem;
+    height: 100px;
+    width: 70%;
+    margin: 0.5rem;
+    border: 2px solid  #10B981;
+    border-radius: 0.5rem;
+    overflow: scroll;
 }

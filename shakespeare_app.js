@@ -3,6 +3,23 @@ var btnTranslate = document.querySelector('.btn-translate');
 var inputText = document.querySelector('#txt-input');
 var outputText = document.querySelector('.output');
 
+// var apiSelection = document.querySelector('.list-item-inline');
+// var serverURL1 = "https://api.funtranslations.com/translate/groot.json";
+// var serverURL2 = "https://api.funtranslations.com/translate/pirate.json";
+// var serverURL3 = "https://api.funtranslations.com/translate/shakespeare.json";
+
+// function getTranslationURL(text){
+//     if(apiSelection.value == "Groot Speaks"){
+//         return serverURL1 + "?" + "text= " + text;
+//     }
+//     else if(apiSelection.value == "Pirates Speaks"){
+//         return serverURL2 + "?" + "text= " + text;
+//     }
+//     else {
+//         return serverURL3 + "?" + "text= " + text;
+//     }
+// }
+
 var serverURL = "https://api.funtranslations.com/translate/shakespeare.json";
 
 function getTranslationURL(text){

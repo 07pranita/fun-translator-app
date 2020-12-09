@@ -25,6 +25,9 @@ body{
 .navigation .link{
     color: black;
 }
+.navigation .link:hover{
+    color: var(--secondary-color);
+}
 .navigation .link-active{
     font-size: large;
     font-weight: bold;
@@ -106,6 +109,7 @@ body{
 }
 
 .btn-translate{
+    cursor: pointer;
     padding: 0.5rem;
     margin: 1rem;
     background-color: var(--primary-color);
